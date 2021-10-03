@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className="flex h-16 bg-blue-300 px-28">
       <div className="flex justify-between w-full px-4 mx-auto max-w-7xl">
-        <div className="flex self-center justify-start text-base font-bold lg:text-xl">
+        <div className="flex self-center justify-start text-base font-bold text-white lg:text-xl">
           THE MIRACLE TUTORIAL
         </div>
         <div className="flex self-center justify-end">

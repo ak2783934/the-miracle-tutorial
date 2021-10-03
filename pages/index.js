@@ -1,9 +1,11 @@
 import Layout from "../layout";
+import Contacts from "../components/Contact";
 
 export default function Home() {
   return (
     <Layout>
-      <div className="self-center text-5xl">Hi from the middle</div>
+      <h1>Testing here</h1>
+      <Contacts />
     </Layout>
   );
 }
