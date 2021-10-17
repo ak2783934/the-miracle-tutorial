@@ -58,9 +58,6 @@ const MySlider = () => {
     const arrowStyle =
       "absolute text-white text-2xl z-10 h-10 w-10 rounded-full opacity-75 flex items-center justify-center";
 
-    // Let's create dynamic buttons. It can be either left or right. Using
-    // isLeft boolean we can determine which side we'll be rendering our button
-    // as well as change its position and content.
     const sliderControl = (isLeft) => (
       <button
         type="button"
@@ -73,6 +70,11 @@ const MySlider = () => {
         </span>
       </button>
     );
+    // useEffect(() => {
+    //   const myTimer = setTimeout(() => {
+    //     nextImage();
+    //   }, 2000);
+    // }, []);
 
     return (
       <div className="flex items-center justify-center w-full">

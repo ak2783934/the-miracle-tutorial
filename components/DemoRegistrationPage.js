@@ -2,9 +2,9 @@ import React from "react";
 
 const DemoRegistrationPage = ({ title, content }) => {
   return (
-    <div>
+    <div className="">
       <hr />
-      <div className="py-4 text-lg font-bold text-center sm:text-lg">
+      <div className="py-4 text-lg font-bold text-center sm:text-4xl">
         {title}
       </div>
       <div className="px-10 pb-4 mx-auto text-sm font-bold sm:w-4/5">
