@@ -70,11 +70,6 @@ const MySlider = () => {
         </span>
       </button>
     );
-    // useEffect(() => {
-    //   const myTimer = setTimeout(() => {
-    //     nextImage();
-    //   }, 2000);
-    // }, []);
 
     return (
       <div className="flex items-center justify-center w-full">

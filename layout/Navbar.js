@@ -74,6 +74,14 @@ const Navbar = () => {
             <li>
               <a
                 className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
+                href="/gallary"
+              >
+                GALLARY
+              </a>
+            </li>
+            <li>
+              <a
+                className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
                 href="/#aboutus"
               >
                 ABOUT US
