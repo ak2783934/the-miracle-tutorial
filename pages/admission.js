@@ -9,7 +9,7 @@ export default function Admission() {
         <title>The miracle tutorial</title>
         <link rel="icon" href="/tmt.png" />
       </Head>
-      <hr />
+      <hr className="border-t-4" />
       <div className="">
         <div className="py-3 text-xl font-bold text-center sm:text-4xl">
           Admission Form
@@ -17,7 +17,7 @@ export default function Admission() {
         <div className="pb-2 text-sm text-center sm:text-lg">
           Enter your admission information below
         </div>
-        <hr />
+        <hr className="border-t-2" />
         <div className="px-10 py-10 sm:px-32">
           <form className="grid grid-cols-1 gap-4">
             <div>

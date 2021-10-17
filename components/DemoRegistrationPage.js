@@ -3,7 +3,7 @@ import React from "react";
 const DemoRegistrationPage = ({ title, content }) => {
   return (
     <div className="">
-      <hr />
+      <hr className="border-t-4" />
       <div className="py-4 text-lg font-bold text-center sm:text-4xl">
         {title}
       </div>
