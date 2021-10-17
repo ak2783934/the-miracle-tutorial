@@ -88,8 +88,8 @@ const NoticeResultList = () => {
         <div
           className={
             currState === "notice"
-              ? "border-b border-r border-gray-600 shadow font-medium bg-blue-300"
-              : "border-b border-r border-gray-600 font-medium hover:bg-blue-300"
+              ? "border-b border-r border-gray-600 shadow font-medium bg-blue-300 hover:cursor-pointer"
+              : "border-b border-r border-gray-600 font-medium hover:bg-blue-300 hover:cursor-pointer"
           }
           onClick={() => {
             setcurrState("notice");
@@ -101,8 +101,8 @@ const NoticeResultList = () => {
         <div
           className={
             currState === "result"
-              ? "border-b border-gray-600 font-medium shadow bg-blue-300"
-              : "border-b border-gray-600 font-medium hover:bg-blue-300"
+              ? "border-b border-gray-600 font-medium shadow bg-blue-300 hover:cursor-pointer"
+              : "border-b border-gray-600 font-medium hover:bg-blue-300 hover:cursor-pointer"
           }
           onClick={() => {
             setcurrState("result");

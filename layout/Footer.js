@@ -51,8 +51,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-2 text-xs text-center text-white sm:py-4 sm:text-sm bg-footerBottom">
-        © Copyright 2021 - All Rights Reserved The Miracle Tutorial.com
+      <div className="flex flex-col py-2 text-xs text-center text-white sm:py-4 sm:text-sm bg-footerBottom sm:flex-row sm:justify-between">
+        <div className="mx-auto">
+          © Copyright 2021 - All Rights Reserved The Miracle Tutorial{" "}
+        </div>
+        <div className="mx-auto">
+          Designed and developed by{" "}
+          <a href="https://fridaytech.in" className="text-blue-400">
+            Friday Technologies
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -74,9 +74,9 @@ const Navbar = () => {
             <li>
               <a
                 className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
-                href="/gallary"
+                href="/gallery"
               >
-                GALLARY
+                GALLERY
               </a>
             </li>
             <li>
