@@ -56,7 +56,7 @@ const Footer = () => {
           © Copyright 2021 - All Rights Reserved The Miracle Tutorial{" "}
         </div>
         <div className="mx-auto">
-          Designed and Developed by
+          Designed and Developed by{" "}
           <a
             href="https://fridaytech.in"
             target="_blank"
