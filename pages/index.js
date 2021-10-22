@@ -5,6 +5,7 @@ import AboutUs from "../components/AboutUs";
 import Boards from "../components/Boards";
 import NoticeDemo from "../components/NoticeDemo";
 import MySlider from "../components/MySlider";
+import ReadyToJoin from "../components/ReadyToJoin";
 import Head from "next/head";
 
 export default function Home() {
@@ -14,12 +15,12 @@ export default function Home() {
         <title>The miracle tutorial</title>
         <link rel="icon" href="/tmt.png" />
       </Head>
-
       <MySlider />
       <Boards />
       <NoticeDemo />
       <AboutUs />
       <Focus />
+      <ReadyToJoin />
     </Layout>
   );
 }

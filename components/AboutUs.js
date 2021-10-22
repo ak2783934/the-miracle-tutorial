@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const AboutUs = () => {
   return (
     <div className="bg-yellow-300" id="aboutus">
@@ -22,18 +24,35 @@ const AboutUs = () => {
       </div>
 
       <div className="flex flex-row pt-0 pb-6 font-bold text-tiny px-7 sm:px-20 sm:text-sm">
-        <img
-          src="/sir.png"
-          alt="sir-photo"
-          className="w-32 border-2 border-red-600 rounded-2xl"
-        />
-        <div className="ml-10 py-auto">
-          <span className="text-xl font-bold leading-3">"</span>To our students,
-          we impart value-based career education, abundant resources, and
-          individual attention. To the parents, we have a responsibility to
-          nurture ethical and responsible career leadership in the children. To
-          the society, we provide a lifelong connection to ethics and excellence
-          in global leaders.
+        <div className="w-32 h-auto">
+          <div className="relative w-32 h-32 border border-red-600 rounded-2xl">
+            <Image
+              src="/sir.png"
+              alt="sir-photo"
+              layout="fill"
+              className="border-2 border-red-600 rounded-2xl max-h-32"
+            />
+          </div>
+          <div className="leading-3 text-center text-tiny ">
+            Golakbihari nayak
+          </div>
+          <div className="leading-3 text-center text-tiny ">
+            (Director of TMT)
+          </div>
+          <div className="leading-3 text-center text-tiny ">
+            (Lect. of Mathematics)
+          </div>
+        </div>
+
+        <div className="w-auto pl-10 py-auto">
+          <span className="text-xl font-bold leading-3">"</span>
+          <span>
+            To our students, we impart value-based career education, abundant
+            resources, and individual attention. To the parents, we have a
+            responsibility to nurture ethical and responsible career leadership
+            in the children. To the society, we provide a lifelong connection to
+            ethics and excellence in global leaders.
+          </span>
           <span className="text-xl font-bold leading-3">"</span>
         </div>
       </div>

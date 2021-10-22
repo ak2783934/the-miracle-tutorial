@@ -112,7 +112,7 @@ const NoticeResultList = () => {
           RESULT
         </div>
       </div>
-      <div className="px-6 pb-6 overflow-y-auto text-sm h-80 sm:text-lg">
+      <div className="px-6 pb-6 overflow-y-auto text-sm sm:h-96 h-72 sm:text-lg">
         {myarray.map((val, index) => (
           <NoticeResult
             key={index}

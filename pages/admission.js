@@ -52,7 +52,7 @@ export default function Admission() {
                   Gender
                 </div>
                 <div className="grid grid-cols-3 sm:py-2">
-                  <div>
+                  <div className="flex flex-col sm:flex-row">
                     <label htmlFor="male" className="pr-3 text-sm sm:text-lg">
                       Male
                     </label>
@@ -60,10 +60,10 @@ export default function Admission() {
                       type="radio"
                       name="gender"
                       value="male"
-                      className="w-4 h-4"
+                      className="w-4 h-4 my-auto"
                     />
                   </div>
-                  <div>
+                  <div className="flex flex-col sm:flex-row">
                     <label htmlFor="female" className="pr-3 text-sm sm:text-lg">
                       Female
                     </label>
@@ -71,10 +71,10 @@ export default function Admission() {
                       type="radio"
                       name="gender"
                       value="female"
-                      className="w-4 h-4"
+                      className="w-4 h-4 my-auto"
                     />
                   </div>
-                  <div>
+                  <div className="flex flex-col sm:flex-row">
                     <label htmlFor="others" className="pr-3 text-sm sm:text-lg">
                       Others
                     </label>
@@ -82,7 +82,7 @@ export default function Admission() {
                       type="radio"
                       name="gender"
                       value="others"
-                      className="w-4 h-4"
+                      className="w-4 h-4 my-auto"
                     />
                   </div>
                 </div>
@@ -126,21 +126,36 @@ export default function Admission() {
             <div className="grid grid-cols-2 gap-8">
               <div>
                 <div className="pb-2 text-lg font-medium sm:text-xl">Class</div>
-                <input
+
+                <select
+                  name="class"
                   className="w-full h-10 px-2 text-sm tracking-wide text-gray-500 border-2 rounded-md sm:text-lg"
-                  placeholder="Class"
-                  type="number"
-                />
+                >
+                  <option value="none" selected disabled hidden>
+                    Select your class
+                  </option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
               </div>
               <div>
                 <div className="pb-2 text-lg font-medium sm:text-xl">
                   School board
                 </div>
-                <input
+                <select
                   className="w-full h-10 px-2 text-sm tracking-wide text-gray-500 border-2 rounded-md sm:text-lg"
-                  placeholder="School board"
-                  type="text"
-                />
+                  name="board"
+                >
+                  <option value="none" selected disabled hidden>
+                    Select your board
+                  </option>
+                  <option value="cbse">CBSE</option>
+                  <option value="chse">CHSE</option>
+                  <option value="bse">BSE</option>
+                </select>
               </div>
             </div>
 
@@ -217,7 +232,7 @@ export default function Admission() {
             </div>
             <button
               type="submit"
-              className="w-1/2 h-8 mx-auto my-5 mt-10 text-sm font-bold bg-green-400 sm:text-lg sm:h-12 sm:w-1/3 rounded-xl"
+              className="w-1/2 h-8 mx-auto my-5 mt-10 text-sm font-bold bg-green-400 sm:text-lg sm:h-12 sm:w-1/3 rounded-xl hover:bg-green-600"
             >
               Proceed to payment
             </button>

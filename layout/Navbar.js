@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const myClass = [
@@ -11,16 +12,18 @@ const Navbar = () => {
     <header>
       <nav className="flex flex-wrap items-center justify-between w-full px-5 py-1 text-lg text-gray-700 bg-white">
         <div>
-          <a href="/" className="flex flex-row items-center">
-            <img
-              src="/tmt.png"
-              className="h-8 w-14 sm:h-10 sm:w-20"
-              alt="tmt"
-            />
-            <div className="hidden pl-3 font-bold md:block">
-              THE MIRACLE TUTORIAL
-            </div>
-          </a>
+          <Link href="/">
+            <a className="flex flex-row items-center">
+              <img
+                src="/tmt.png"
+                className="h-8 w-14 sm:h-10 sm:w-20"
+                alt="tmt"
+              />
+              <div className="hidden pl-3 font-bold md:block">
+                THE MIRACLE TUTORIAL
+              </div>
+            </a>
+          </Link>
         </div>
 
         <div className="font-bold md:hidden">THE MIRACLE TUTORIAL</div>
@@ -48,52 +51,46 @@ const Navbar = () => {
         <div className={myClass[cnt]} id="menu">
           <ul className="pt-4 text-base font-bold text-gray-700 md:flex md:justify-between md:pt-0">
             <li>
-              <a
-                className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
-                href="/#"
-              >
-                HOME
-              </a>
+              <Link href="/#">
+                <a className="block py-2 md:p-4 hover:text-hoverColor hover:underline">
+                  HOME
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
-                href="/#boards"
-              >
-                COURSES
-              </a>
+              <Link href="/#boards">
+                <a className="block py-2 md:p-4 hover:text-hoverColor hover:underline">
+                  COURSES
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
-                href="/admission"
-              >
-                ADMISSION
-              </a>
+              <Link href="/admission">
+                <a className="block py-2 md:p-4 hover:text-hoverColor hover:underline">
+                  ADMISSION
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
-                href="/gallery"
-              >
-                GALLERY
-              </a>
+              <Link href="/gallery">
+                <a className="block py-2 md:p-4 hover:text-hoverColor hover:underline">
+                  GALLERY
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
-                href="/#aboutus"
-              >
-                ABOUT US
-              </a>
+              <Link href="/#aboutus">
+                <a className="block py-2 md:p-4 hover:text-hoverColor hover:underline">
+                  ABOUT US
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                className="block py-2 md:p-4 hover:text-hoverColor hover:underline"
-                href="/#contactus"
-              >
-                CONTACT US
-              </a>
+              <Link href="/#contactus">
+                <a className="block py-2 md:p-4 hover:text-hoverColor hover:underline">
+                  CONTACT US
+                </a>
+              </Link>
             </li>
           </ul>
         </div>

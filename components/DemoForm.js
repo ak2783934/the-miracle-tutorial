@@ -18,11 +18,32 @@ const DemoForm = () => {
             type="email"
             placeholder="Email"
           />
-          <input
+
+          <select
             className="w-full h-10 px-2 tracking-widest text-gray-500 bg-gray-100 rounded-md "
-            type="text"
-            placeholder="Class"
-          />
+            name="board"
+          >
+            <option value="none" selected disabled hidden>
+              Select your class
+            </option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+
+          <select
+            className="w-full h-10 px-2 tracking-widest text-gray-500 bg-gray-100 rounded-md "
+            name="board"
+          >
+            <option value="none" selected disabled hidden>
+              Select your board
+            </option>
+            <option value="cbse">CBSE</option>
+            <option value="chse">CHSE</option>
+            <option value="bse">BSE</option>
+          </select>
           <input
             className="w-full h-10 px-2 tracking-widest text-gray-500 bg-gray-100 rounded-md "
             type="number"

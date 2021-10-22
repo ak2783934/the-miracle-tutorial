@@ -16,9 +16,9 @@ const Footer = () => {
 
               <div className="w-2/3 pl-3 text-sm">
                 <div className="font-bold">The Miracle Tutorial</div>
-                <div> Dumduma,&nbsp;Bhubaneswar</div>
-                <div> Odisha, Pin- 752019</div>
-                <div>Landmark: Behind SBI Dumduma</div>
+                <div> Phase 2, Dumduma </div>
+                <div> Near SBI, Bhubaneswar</div>
+                <div> Odisha, 751019</div>
               </div>
             </div>
             <div className="flex flex-row">
@@ -26,9 +26,10 @@ const Footer = () => {
                 <Image src="/phone.png" width={30} height={30} />
               </div>
 
-              <div className="w-2/3 pl-3 text-sm">
+              <div className="w-auto pl-3 text-sm sm:w-3/4">
                 <div>Phone: </div>
-                <div>6370324756,&nbsp;6371809622</div>
+                <a href="tel:6370324756">6370324756</a>
+                <a href="tel:6371809622">, 6371809622</a>
               </div>
             </div>
             <div className="flex flex-row">
@@ -37,7 +38,9 @@ const Footer = () => {
               </div>
 
               <div className="w-auto pl-3 text-sm sm:w-3/4">
-                <div>Email: www.themiracletutorial@gmail.com </div>
+                <a href="mailto:www.themiracletutorial@gmail.com">
+                  Email: www.themiracletutorial@gmail.com{" "}
+                </a>
               </div>
             </div>
           </div>
@@ -46,8 +49,8 @@ const Footer = () => {
           <div className="pt-3 text-xl font-bold text-center text-white sm:text-2xl">
             Map
           </div>
-          <div className="h-64 max-w-lg mx-auto sm:max-w-md mt-7 ">
-            <img src="/map.jpg" alt="map-image" className="w-full" />
+          <div className="relative h-64 max-w-lg mx-auto sm:max-w-md mt-7">
+            <Image src="/map.jpg" layout="fill" alt="map-image" />
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import DemoForm from "./DemoForm";
 
 const DemoRegistrationPage = ({ title, content }) => {
   return (
@@ -62,41 +63,8 @@ const DemoRegistrationPage = ({ title, content }) => {
           ODIA
         </div>
       </div>
-
-      <div className="w-full mx-auto rounded shadow-xl sm:w-1/2 sm:my-10 bg-notice">
-        <div className="pt-5 pb-8 text-sm font-bold text-center sm:text-lg">
-          REGISTER FOR A DEMO CLASS
-        </div>
-        <div>
-          <form className="grid grid-cols-1 gap-4 px-16 sm:px-36 pb-14">
-            <input
-              className="w-full h-10 px-2 text-sm tracking-wide text-gray-500 border-2 rounded-md sm:text-lg"
-              type="text"
-              placeholder="Full Name"
-            />
-            <input
-              className="w-full h-10 px-2 text-sm tracking-wide text-gray-500 border-2 rounded-md sm:text-lg"
-              type="email"
-              placeholder="Email"
-            />
-            <input
-              className="w-full h-10 px-2 text-sm tracking-wide text-gray-500 border-2 rounded-md sm:text-lg"
-              type="text"
-              placeholder="Class"
-            />
-            <input
-              className="w-full h-10 px-2 text-sm tracking-wide text-gray-500 border-2 rounded-md sm:text-lg"
-              type="number"
-              placeholder="Phone no."
-            />
-            <button
-              type="submit"
-              className="h-10 py-1 text-white rounded-md bg-noticeButton"
-            >
-              Submit
-            </button>
-          </form>
-        </div>
+      <div className="w-full mx-auto sm:w-1/2">
+        <DemoForm />
       </div>
     </div>
   );
