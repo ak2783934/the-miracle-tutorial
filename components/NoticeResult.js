@@ -1,4 +1,8 @@
 const NoticeResult = ({ msg, date, noticeLink }) => {
+  const getNewDate = (str) => {
+    return str.substr(0, 10);
+  };
+
   return (
     <div className="py-2">
       <a
@@ -8,7 +12,9 @@ const NoticeResult = ({ msg, date, noticeLink }) => {
       >
         {msg}
       </a>
-      <span className="pl-4 text-xs font-light text-red-700">{date}</span>
+      <span className="pl-4 text-xs font-light text-red-700">
+        {getNewDate(date)}
+      </span>
     </div>
   );
 };

@@ -33,7 +33,7 @@ const AboutUs = () => {
               className="border-2 border-red-600 rounded-2xl max-h-32"
             />
           </div>
-          <div className="leading-3 text-center text-tiny ">
+          <div className="leading-3 text-center text-tiny">
             Golakbihari Nayak
           </div>
           <div className="leading-3 text-center text-tiny ">
@@ -42,7 +42,7 @@ const AboutUs = () => {
           <div className="leading-3 text-center text-tiny ">
             (Lect. of Mathematics)
           </div>
-        </div>  
+        </div>
 
         <div className="w-auto pl-10 py-auto">
           <span className="text-xl font-bold leading-3">"</span>
