@@ -34,7 +34,7 @@ const AboutUs = () => {
             />
           </div>
           <div className="leading-3 text-center text-tiny ">
-            Golakbihari nayak
+            Golakbihari Nayak
           </div>
           <div className="leading-3 text-center text-tiny ">
             (Director of TMT)
@@ -42,7 +42,7 @@ const AboutUs = () => {
           <div className="leading-3 text-center text-tiny ">
             (Lect. of Mathematics)
           </div>
-        </div>
+        </div>  
 
         <div className="w-auto pl-10 py-auto">
           <span className="text-xl font-bold leading-3">"</span>
