@@ -10,11 +10,14 @@ const Event = ({ eventName, images }) => {
       <div className="w-full bg-gray-200 h-60 sm:h-96">
         <div className="flex flex-row h-1/2">
           <div className="relative w-1/2 h-full border-2 border-blue-300">
-            <Image src={images[0].image} layout="fill" />
+            <Image
+              src={images.length >= 1 ? images[0].image : "/firstImg.jpg"}
+              layout="fill"
+            />
           </div>
           <div className="relative w-1/2 h-full border-2 border-blue-300">
             <Image
-              src={images.length >= 2 ? image[1].image : "/secondImg.jpg"}
+              src={images.length >= 2 ? images[1].image : "/secondImg.jpg"}
               layout="fill"
             />
           </div>
