@@ -49,14 +49,17 @@ const NoticeResultList = () => {
         </button>
       </div>
       <div className="px-6 pb-6 overflow-y-auto text-sm sm:h-96 h-72 sm:text-lg">
-        {myarray?.map((val, index) => (
-          <NoticeResult
-            key={index}
-            msg={currType === "result" ? val.result : val.notice}
-            date={val.createdAt}
-            noticeLink={val.link}
-          />
-        ))}
+        {myarray
+          ?.slice(0)
+          .reverse()
+          .map((val, index) => (
+            <NoticeResult
+              key={index}
+              msg={currType === "result" ? val.result : val.notice}
+              date={val.createdAt}
+              noticeLink={val.link}
+            />
+          ))}
       </div>
     </div>
   );

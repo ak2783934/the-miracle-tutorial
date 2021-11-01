@@ -32,9 +32,12 @@ const gallery = () => {
       </Head>
       <hr className="border-t-4" />
       <div className="py-3 text-4xl font-medium text-center">GALLERY</div>
-      {events?.map((val, index) => (
-        <Event eventName={val.eventName} images={val.images} key={index} />
-      ))}
+      {events
+        ?.slice(0)
+        .reverse()
+        .map((val, index) => (
+          <Event eventName={val.eventName} images={val.images} key={index} />
+        ))}
     </Layout>
   );
 };

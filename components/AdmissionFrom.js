@@ -56,24 +56,24 @@ const AdmisssionFrom = () => {
       photo: Yup.mixed().required("Required"),
     }),
     onSubmit: async (values, { resetForm }) => {
-      var formDate = new FormData();
-      formDate.append("name", values.firstName + " " + values.lastName);
-      formDate.append("birthDate", values.birthDate);
-      formDate.append("gender", values.gender);
-      formDate.append("mothersName", values.mothersName);
-      formDate.append("fathersName", values.fathersName);
-      formDate.append("classs", values.classs);
-      formDate.append("board", values.board);
-      formDate.append("prevMarks", values.prevMarks);
-      formDate.append("school", values.school);
-      formDate.append("contact", values.contact);
-      formDate.append("fathersContact", values.fathersContact);
-      formDate.append("emailId", values.emailId);
-      formDate.append("address", values.address);
-      formDate.append("photo", values.photo);
+      var formData = new FormData();
+      formData.append("name", values.firstName + " " + values.lastName);
+      formData.append("birthDate", values.birthDate);
+      formData.append("gender", values.gender);
+      formData.append("mothersName", values.mothersName);
+      formData.append("fathersName", values.fathersName);
+      formData.append("classs", values.classs);
+      formData.append("board", values.board);
+      formData.append("prevMarks", values.prevMarks);
+      formData.append("school", values.school);
+      formData.append("contact", values.contact);
+      formData.append("fathersContact", values.fathersContact);
+      formData.append("emailId", values.emailId);
+      formData.append("address", values.address);
+      formData.append("photo", values.photo);
 
       await api
-        .post("/admission", formDate, { "Content-Type": "multipart/form-data" })
+        .post("/admission", formData, { "Content-Type": "multipart/form-data" })
         .then((data) => {
           console.log(data);
           console.log("Data is posted! ");
