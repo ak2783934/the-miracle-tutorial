@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { api } from "../pages/api/index";
 
 const DemoForm = () => {
+  const [submitted, setSubmmitted] = useState(false);
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -20,17 +21,18 @@ const DemoForm = () => {
       class: Yup.number("Class should be a number").required("Required"),
       board: Yup.string("board should be a string").required("requried"),
       contact: Yup.string()
-        .max(10, "should have 10 characters")
-        .min(10, "min 10 characters are required")
+        .max(10, "Phone number have 10 characters")
+        .min(10, "Phone number have 10 characters")
         .required("Required"),
     }),
-    onSubmit: async (values) => {
-      console.log(values);
+    onSubmit: async (values, { resetForm }) => {
       await api
         .post("/demo", values)
         .then((data) => {
           console.log(data);
           console.log("Data is posted! ");
+          setSubmmitted(true);
+          resetForm();
         })
         .catch((err) => console.log(err));
     },
@@ -126,6 +128,12 @@ const DemoForm = () => {
           >
             Submit
           </button>
+
+          {submitted && (
+            <div className="text-sm text-center text-green-700">
+              We will contact you soon!
+            </div>
+          )}
         </form>
       </div>
     </div>
